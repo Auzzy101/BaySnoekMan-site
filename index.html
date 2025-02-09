@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bay Snoek Man | Fresh Seafood</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <!-- Add Google Fonts for Stylish Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    </head>
+    
+<body>
+    <header>
+        <h1>Bay Snoek Man</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li> <!-- New Gallery Link -->
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#order">Order/Inquiry</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section id="home" class="hero">
+        <h2>Fresh Seafood, Ocean to Plate</h2>
+        <h3>Where passion meets the ocean. Dive into our world of freshly caught seafood!</h3>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Bay Snoek Man started with a simple mission: to bring the flavors of the ocean to every home. Our story began with a love for seafood and a dedication to quality. Every dish we prepare tells a tale of the sea, tradition, and the warmth of family. We believe in sustainability, freshness, and delivering happiness, one bite at a time.</p>
+    </section>
+
+       <!-- Gallery Section -->
+       <section id="gallery">
+        <h2>Our Wholesale Seafood Gallery</h2>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="images/All purpose shrimps.jpg" alt="Shrimp">
+            </div>
+            <div class="gallery-item">
+                <img src="images/Calamari rings.jpg" alt="Calamari Rings">
+            </div>
+            <div class="gallery-item">
+                <img src="images/crab flavoured surimi sticks.jpg" alt="Crab Flavored Surimi Sticks">
+            </div>
+            <div class="gallery-item">
+                <img src="images/fish plate 1.jpg" alt="Fish Plate">
+            </div>
+            <div class="gallery-item">
+                <img src="images/Muscle meat.jpg" alt="Mussel Meat">
+            </div>
+            <div class="gallery-item">
+                <img src="images/muscles.jpg" alt="Muscles">
+            </div>
+            <div class="gallery-item">
+                <img src="images/prawns.jpg" alt="Prawns">
+            </div>
+            <div class="gallery-item">
+                <img src="images/RAW FISH PICTURES.jpg" alt="Raw whole fish">
+            </div>
+            <div class="gallery-item">
+                <img src="images/RAW FISH PIC 2.jpg" alt="Whole Fish">
+            </div>
+            <div class="gallery-item">
+                <img src="images/MENU 6.jpg" alt="Special">
+            </div>
+            <div class="gallery-item">
+                <img src="images/MENU 4.jpg" alt="Whole Fish Prices">
+            </div>
+            <div class="gallery-item">
+                <img src="images/Seafood Boil.jpg" alt="Seafood boil">
+            </div>
+            <div class="gallery-item">
+                <img src="images/snoek.jpg" alt="Snoek">
+            </div>
+            <div class="gallery-item">
+                <img src="images/Squid steaks.jpg" alt="Squid Steaks">
+            </div>
+        </div>
+    </section>
+    
+    <section id="menu">
+        <h2>Our Takeout Menu</h2>
+        <div class="menu-container">
+            <div class="menu-column">
+                <h3>Hake</h3>
+                <ul>
+                    <li>1 Piece and Chips - R40</li>
+                    <li>2 Piece and Chips - R65</li>
+                    <li>4 Piece and Chips - R140</li>
+                    <li>6 Piece and Chips - R160</li>
+                    <li>8 Piece and Chips - R180</li>
+                </ul>
+
+                <h3>Gatsby</h3>
+                <ul>
+                    <li>Hake - R150</li>
+                    <li>Calamari - R150</li>
+                    <li>Hake and Calamari - R250</li>
+                    <li>Seafood Gatsby Hot - R250</li>
+                </ul>
+
+                <h3>Wrap</h3>
+                <ul>
+                    <li>Hake - R50</li>
+                    <li>Hake and Calamari - R70</li>
+                </ul>
+            </div>
+
+            <div class="menu-column">
+                <h3>Snoek</h3>
+                <ul>
+                    <li>1 Piece and Chips - R40</li>
+                    <li>2 Piece and Chips - R80</li>
+                    <li>4 Piece and Chips - R170</li>
+                    <li>8 Piece and Chips - R280</li>
+                </ul>
+
+                <h3>Burger</h3>
+                <ul>
+                    <li>Hake - R40</li>
+                    <li>Hake and Calamari - R50</li>
+                </ul>
+
+                <h3>Smoked Snoek</h3>
+                <ul>
+                    <li>Smoked Snoek - R60</li>
+                </ul>
+
+                <h3>Bay Pot</h3>
+                <ul>
+                    <li>Curry and Rice - R40</li>
+                    <li>Seafood Boil - R200</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="order">
+        <h2>Place Your Order or Inquiry</h2>
+        <form action="#" method="POST" class="order-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            
+            <label for="contact">Contact Number:</label>
+            <input type="tel" id="contact" name="contact" placeholder="Enter your phone number" required>
+            
+            <label for="menu-item">Select Menu Item:</label>
+            <select id="menu-item" name="menu-item" required>
+                <option value="">Choose an item</option>
+                <option value="hake-1">Hake - 1 Piece and Chips (R40)</option>
+                <option value="hake-2">Hake - 2 Pieces and Chips (R65)</option>
+                <option value="hake-4">Hake - 4 Pieces and Chips (R140)</option>
+                <option value="hake-6">Hake - 6 Pieces and Chips (R160)</option>
+                <option value="hake-8">Hake - 8 Pieces and Chips (R180)</option>
+                <option value="gatsby-hake">Gatsby - Hake (R150)</option>
+                <option value="gatsby-calamari">Gatsby - Calamari (R150)</option>
+                <option value="gatsby-both">Gatsby - Hake and Calamari (R250)</option>
+                <option value="gatsby-seafood">Seafood Gatsby Hot (R250)</option>
+                <option value="wrap-hake">Wrap - Hake (R50)</option>
+                <option value="wrap-both">Wrap - Hake and Calamari (R70)</option>
+                <option value="snoek-1">Snoek - 1 Piece and Chips (R40)</option>
+                <option value="snoek-2">Snoek - 2 Pieces and Chips (R80)</option>
+                <option value="snoek-4">Snoek - 4 Pieces and Chips (R170)</option>
+                <option value="snoek-8">Snoek - 8 Pieces and Chips (R280)</option>
+                <option value="burger-hake">Burger - Hake (R40)</option>
+                <option value="burger-both">Burger - Hake and Calamari (R50)</option>
+                <option value="smoked-snoek">Smoked Snoek (R60)</option>
+                <option value="bay-pot-curry">Bay Pot - Curry and Rice (R40)</option>
+                <option value="bay-pot-seafood">Bay Pot - Seafood Boil (R200)</option>
+            </select>
+            
+            <label for="message">Additional Message or Inquiry:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Ask a question or specify special requests"></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Phone: +27 73 856 8462</p>
+        <p>Email: baysnoekman141@gmail.com</p>
+        <p>Address: Cleary Park | Walmer & Port Elizabeth Surrounding Areas</p>
+        <div class="social-media">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://wa.me/+27738568462" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Bay Snoek Man. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
