@@ -226,4 +226,75 @@ footer {
     color: white;
     cursor: pointer;
 }
+/* Base Styles (Desktop and Tablets) */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #3675a8;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        text-align: center;
+        padding: 15px;
+    }
+
+    nav {
+        flex-direction: column; /* Stack nav items vertically */
+        align-items: center;
+    }
+
+    nav a {
+        padding: 12px;
+        font-size: 18px;
+    }
+
+    .order-form input,
+    .order-form select,
+    .order-form button {
+        width: 100%; /* Make form elements responsive */
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+}
+.order-form input,
+.order-form select,
+.order-form button {
+    width: 100%; /* Make the form elements take up full width on mobile */
+    padding: 12px;
+    margin: 10px 0;
+}
+
+.order-form label {
+    display: block;
+    margin-bottom: 5px;
+}
 
