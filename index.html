@@ -144,13 +144,13 @@
 
     <section id="order">
         <h2>Place Your Order or Inquiry</h2>
-        <form action="#" method="POST" class="order-form">
+        <form action="https://formspree.io/f/manqbvgr" method="POST" class="order-form">
             <label for="name">Your Name:</label>
             <input type="text" id="name" name="name" placeholder="Enter your full name" required>
-            
+    
             <label for="contact">Contact Number:</label>
             <input type="tel" id="contact" name="contact" placeholder="Enter your phone number" required>
-            
+    
             <label for="menu-item">Select Menu Item:</label>
             <select id="menu-item" name="menu-item" required>
                 <option value="">Choose an item</option>
@@ -175,13 +175,15 @@
                 <option value="bay-pot-curry">Bay Pot - Curry and Rice (R40)</option>
                 <option value="bay-pot-seafood">Bay Pot - Seafood Boil (R200)</option>
             </select>
-            
+    
             <label for="message">Additional Message or Inquiry:</label>
             <textarea id="message" name="message" rows="5" placeholder="Ask a question or specify special requests"></textarea>
-            
+    
             <button type="submit">Submit</button>
         </form>
+        <p id="form-success" style="display: none; color: green;">Thank you! Your order has been submitted.</p>
     </section>
+    
 
     <section id="contact">
         <h2>Contact Us</h2>
