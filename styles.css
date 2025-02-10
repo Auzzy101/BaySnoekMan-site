@@ -1,11 +1,12 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    margin: 3px;
+    padding: 3px;
     line-height: 1.6;
     color: #2a2a2a;
 }
 
+/* Header */
 header {
     background: #3675a8;
     color: white;
@@ -33,6 +34,7 @@ header nav a {
     font-weight: bold;
 }
 
+/* Hero Section */
 .hero {
     background: url('images/boat-207129.jpg') no-repeat center center/cover;
     color: white;
@@ -51,6 +53,7 @@ header nav a {
     margin-bottom: 1rem;
 }
 
+/* General Section Styles */
 section {
     padding: 2rem 1rem;
     background: linear-gradient(to bottom, #d0f0fd, #87ceeb);
@@ -60,6 +63,7 @@ section {
     margin-bottom: 1.5rem;
 }
 
+/* About, Menu, Contact, Order */
 #about,
 #menu,
 #contact,
@@ -68,6 +72,7 @@ section {
     text-align: center;
 }
 
+/* Gallery Section */
 #gallery {
     background: linear-gradient(to right, #a7e4ff, #70d6ff);
     padding: 2rem 1rem;
@@ -102,8 +107,9 @@ section {
     transform: scale(1.1);
 }
 
+/* Menu Section */
 #menu {
-    background: url('images/newbackgroundImgMenu.jpg') no-repeat center center/cover; /* Add background image here */
+    background: url('images/newbackgroundImgMenu.jpg') no-repeat center center/cover;
     background-size: cover;
     text-align: center;
     color: white;
@@ -123,7 +129,7 @@ section {
     padding: 1rem;
     border: 1px solid #ddd;
     border-radius: 8px;
-    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background for better readability */
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 h3 {
@@ -143,6 +149,7 @@ li {
     margin: 0.5rem 0;
 }
 
+/* Order Form */
 .order-form {
     max-width: 600px;
     margin: 0 auto;
@@ -175,126 +182,68 @@ li {
     font-size: 1rem;
 }
 
-.order-form button:hover {
-    background: #1e4e6a;
-}
-
-.social-media a {
-    text-decoration: none;
-    font-size: 2rem;
-    margin: 0 1rem;
-    color: #3675a8;
-}
-
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-}
-.lightbox {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-}
-
-.lightbox-content {
-    position: relative;
-    max-width: 80%;
-    max-height: 80%;
-}
-
-.lightbox-content img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-.close {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    font-size: 30px;
-    color: white;
-    cursor: pointer;
-}
-/* Base Styles (Desktop and Tablets) */
-body {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: #3675a8;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    text-align: center;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px;
-
-}
-
-/* Mobile Styles */
+/* Media Queries for Mobile Devices */
 @media (max-width: 768px) {
-    body {
-        font-size: 14px;
+    header h1 {
+        font-size: 2rem;
     }
 
-    header {
-        text-align: center;
-        padding: 15px;
+    .hero h2 {
+        font-size: 2.5rem;
     }
 
-    nav {
-        flex-direction: column; /* Stack nav items vertically */
+    .hero h3 {
+        font-size: 1.2rem;
+    }
+
+    .gallery-container {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    .menu-container {
+        flex-direction: column;
         align-items: center;
     }
 
-    nav a {
-        padding: 12px;
-        font-size: 18px;
+    .menu-column {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .order-form {
+        padding: 1rem;
     }
 
     .order-form input,
     .order-form select,
-    .order-form button {
-        width: 100%; /* Make form elements responsive */
-        padding: 10px;
-        margin-bottom: 10px;
+    .order-form textarea {
+        padding: 1rem;
     }
 }
-.order-form input,
-.order-form select,
-.order-form button {
-    width: 100%; /* Make the form elements take up full width on mobile */
-    padding: 12px;
-    margin: 10px 0;
-}
 
-.order-form label {
-    display: block;
-    margin-bottom: 5px;
-}
+@media (max-width: 480px) {
+    header nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
 
+    header nav a {
+        font-size: 1.1rem;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero h3 {
+        font-size: 1rem;
+    }
+
+    .gallery-container {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-container {
+        flex-direction: column;
+    }
+}
