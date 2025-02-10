@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 3px;
@@ -10,7 +11,7 @@ body {
 header {
     background: #3675a8;
     color: white;
-    padding: 1rem;
+    padding: 10px 0;
     text-align: center;
 }
 
@@ -63,7 +64,6 @@ section {
     margin-bottom: 1.5rem;
 }
 
-
 /* About, Menu, Contact, Order */
 #about,
 #menu,
@@ -109,7 +109,6 @@ section {
     transform: scale(1.1);
 }
 
-
 /* Menu Section */
 #menu {
     background: url('images/newbackgroundImgMenu.jpg');
@@ -118,12 +117,6 @@ section {
     background-position: center;
     text-align: center;
     color: white;
-
-    @media (max-width: 768px) {
-        .menu-section {
-            height: 300px; /* Adjust height for smaller screens */
-        }
-    }
 }
 
 .menu-container {
@@ -220,7 +213,7 @@ li {
         margin: 1rem 0;
     }
 
-
+    /* Updated Order Form for Mobile */
     .order-form {
         padding: 1rem;
     }
@@ -229,6 +222,12 @@ li {
     .order-form select,
     .order-form textarea {
         padding: 1rem;
+    }
+
+    /* Updated Menu Background Image for Mobile */
+    #menu {
+        background-image: url('images/mobilebackgroundImg.jpg'); /* Mobile background image */
+        background-size: cover;
     }
 }
 
@@ -258,6 +257,7 @@ li {
         flex-direction: column;
     }
 }
+
 /* Footer Styles */
 footer {
     background: #3675a8; /* Same as header background */
