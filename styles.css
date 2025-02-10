@@ -15,7 +15,7 @@ header {
 }
 
 header h1 {
-    margin: 1;
+    margin: 1rem;
     font-size: 2.5rem;
 }
 
@@ -63,6 +63,7 @@ section {
     margin-bottom: 1.5rem;
 }
 
+
 /* About, Menu, Contact, Order */
 #about,
 #menu,
@@ -100,12 +101,14 @@ section {
 .gallery-item img {
     width: 100%;
     height: auto;
+    object-fit: cover; /* Ensures consistent image sizing */
     transition: transform 0.3s ease;
 }
 
 .gallery-item img:hover {
     transform: scale(1.1);
 }
+
 
 /* Menu Section */
 #menu {
@@ -216,6 +219,7 @@ li {
         width: 100%;
         margin: 1rem 0;
     }
+
 
     .order-form {
         padding: 1rem;
