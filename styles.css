@@ -165,12 +165,13 @@ li {
     font-weight: bold;
 }
 
-.order-form input,
-.order-form select,
-.order-form textarea {
-    width: 100%;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
+/* Consistent Input Styles */
+input, select, textarea {
+    width: 100%; /* Ensures responsiveness */
+    max-width: 100%; /* Prevents overflowing */
+    padding: 10px; /* Consistent padding */
+    margin: 5px 0; /* Space between inputs */
+    box-sizing: border-box; /* Includes padding in width/height */
     border: 1px solid #ccc;
     border-radius: 5px;
 }
