@@ -9,8 +9,10 @@ body {
 
 /* Header */
 header {
-    background: #3675a8;
-    color: white;
+    background: #3647a8;
+    color: rgb(255, 255, 255);
+    text-shadow: #666;
+    text-overflow: clip;
     padding: 10px 0;
     text-align: center;
 }
@@ -33,6 +35,8 @@ header nav a {
     text-decoration: none;
     color: white;
     font-weight: bold;
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Improved visibility */
 }
 
 /* Hero Section */
@@ -101,7 +105,7 @@ section {
 .gallery-item img {
     width: 100%;
     height: auto;
-    object-fit: cover; /* Ensures consistent image sizing */
+    object-fit: cover;
     transition: transform 0.3s ease;
 }
 
@@ -167,11 +171,11 @@ li {
 
 /* Consistent Input Styles */
 input, select, textarea {
-    width: 100%; /* Ensures responsiveness */
-    max-width: 100%; /* Prevents overflowing */
-    padding: 10px; /* Consistent padding */
-    margin: 5px 0; /* Space between inputs */
-    box-sizing: border-box; /* Includes padding in width/height */
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
@@ -214,7 +218,6 @@ input, select, textarea {
         margin: 1rem 0;
     }
 
-    /* Updated Order Form for Mobile */
     .order-form {
         padding: 1rem;
     }
@@ -225,14 +228,23 @@ input, select, textarea {
         padding: 1rem;
     }
 
-    /* Updated Menu Background Image for Mobile */
     #menu {
-        background-image: url('images/mobilebackgroundImg.jpg'); /* Mobile background image */
+        background-image: url('images/mobilebackgroundImg.jpg');
         background-size: cover;
+    }
+
+    header nav a {
+        font-size: 1.5rem;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Stronger contrast for mobile */
     }
 }
 
 @media (max-width: 480px) {
+    header {
+        background: url('images/seaMobileBackgroundForHomePg.jpg') no-repeat center center;
+        background-size: cover;
+    }
+
     header nav ul {
         flex-direction: column;
         gap: 0.5rem;
@@ -261,7 +273,7 @@ input, select, textarea {
 
 /* Footer Styles */
 footer {
-    background: #3675a8; /* Same as header background */
+    background: #3675a8;
     color: white;
     text-align: center;
     padding: 1rem 0;
