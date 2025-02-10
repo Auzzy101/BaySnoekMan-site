@@ -109,13 +109,13 @@ section {
 
 /* Menu Section */
 #menu {
-    background: url('images/newbackgroundImgMenu.jpg') no-repeat center center/cover;
+    background: url('images/newbackgroundImgMenu.jpg');
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     text-align: center;
     color: white;
-    padding: 3rem 1rem;
-    
+
     @media (max-width: 768px) {
         .menu-section {
             height: 300px; /* Adjust height for smaller screens */
@@ -269,17 +269,4 @@ footer {
 
 footer p {
     margin: 0;
-}
-/* Ensure columns don't overlap on small screens */
-@media (max-width: 768px) {
-    .menu-columns {
-        display: block;
-        width: 100%;
-        margin: 0;
-    }
-
-    .order-form {
-        margin-top: 20px; /* Add space between menu and order form */
-        width: 100%;
-    }
 }
